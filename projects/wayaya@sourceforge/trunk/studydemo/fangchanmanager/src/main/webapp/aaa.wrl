@@ -1,0 +1,84 @@
+#VRML V2.0 utf8
+
+Group {
+	children [
+		Background {
+			skyAngle [1.308,1.57]
+			skyColor [0.0 0.2 0.7, 0.0 0.5 1.0,0.6 0.6 0.6]
+			groundAngle [1.308,1.57]
+			groundColor	[0.0 1.0 0.0 0.8 0.8 0.8,0.6 0.6 0.6]				
+		},
+		Transform {
+			translation	0.0 -1.0 0.0
+			children [
+				Shape {	 #di mian
+					geometry Box {
+						size 50 0.0005 50
+					}
+					appearance Appearance {
+						material Material {
+							emissiveColor 0.0 0.5 0.2
+						}
+					}
+				}
+			]
+		},
+		Transform {
+			translation	0.0 3.2 0.0
+			children [
+				Shape {
+					geometry Box {
+						  size 0.3 0.4 0.5
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"aaa.jpg"
+						}
+					}
+				}
+			]
+		},
+		Transform {
+			translation	1.0 3.3 0.0
+			children [
+				Shape	{
+					geometry Sphere	{
+						radius 0.3
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"aaa.jpg"
+						}
+					}
+				},
+			]
+		},
+		Transform {
+			translation	0.0 1.0 0.0
+			children	[
+				Shape {
+					geometry Box {
+						size 3.0 4.0 0.4
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"brick.jpg"
+						}
+					}
+				}
+			]
+		},
+		Viewpoint {
+			position	0.0 10.0 40.0
+			orientation	1.0 0.0 0.0 -0.262
+			description	"view1"
+			jump FALSE
+		},
+		Viewpoint {
+			position	0.0 0.0 10.0
+			orientation	1.0 0.0 0.0 0.0
+			description	"view1"
+			jump FALSE
+		},
+	]
+}

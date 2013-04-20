@@ -1,0 +1,23 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<title>房产管理系统</title>
+</head>
+
+<frameset rows="25%,*" framespacing="0" border="0" frameborder="0">
+	<frame name="banner" scrolling="no" target="contents" src="banner.html">
+	<frameset cols="15%,*">
+		<frame name="contents" target="main" src="contents.html" scrolling="no">
+		<frame name="main" scrolling="no" src="aaa.html" target="_self">
+	</frameset>
+	<noframes>
+	<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+	<p>此网页使用了框架，但您的浏览器不支持框架。</p>
+
+	</body>
+	</noframes>
+</frameset>
+
+</html>

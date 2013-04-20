@@ -1,0 +1,1381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>哇呀呀婚礼册</title>
+    <meta content="wayaya" name=keywords>
+    <meta content="wayaya demos" name="description">
+    <meta content="wayaya" name="author">
+    <meta content="20028-2009 wayaya Inc." name="copyright">
+    <base target="_blank"/>
+    <link href="http://wayaya.ipchina.org/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://wayaya.ipchina.org/favicon.ico" rel="icon" type="image/x-icon">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+        }
+
+        body {
+            font: 12px / 1.4em "宋体", Verdana, Geneva, Arial, Helvetica, sans-serif;
+            line-height: 150%;
+            color: #999999;
+            background-color: #1f2126;;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            margin-left: auto;;
+            margin-right: auto;
+        }
+
+        ul, ol {
+            list-style-type: none;
+        }
+
+        select, input, img, select {
+            vertical-align: baseline;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #336;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #336;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #c00;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: #336;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-family: "黑体", sans-serif;
+            font-weight: normal;
+            line-height: 150%;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-family: "黑体", sans-serif;
+            font-weight: normal;
+            line-height: 150%;
+        }
+
+        .link14, a.link14:link, a.link14:visited, a.link14:hover {
+            font-size: 14px;
+        }
+
+        .dis {
+            display: block;
+        }
+
+        .undis {
+            display: none;
+        }
+    </style>
+    <script src="js/compressed.js" type=text/javascript></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.layout.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.all.js"></script>
+    <script type="text/javascript">
+        //<!--
+        var outerLayout, middleLayout, innerLayout, navLayout;
+
+        $(document).ready(function () {
+
+            outerLayout = $('body').layout({
+                center__paneSelector:".outer-center"
+                //                ,    west__paneSelector:        ".outer-west"
+                , east__paneSelector:".outer-east"
+                //                ,    west__size:                125
+                , east__size:170, spacing_open:0 // ALL panes
+                , spacing_closed:0 // ALL panes
+                //,	north__spacing_open:	0
+                //,	south__spacing_open:	0
+                , north__size:130
+                //                ,    south__maxSize:            200
+                , center__onresize:"middleLayout.resizeAll"
+            });
+
+            middleLayout = $('div.outer-center').layout({
+                center__paneSelector:".middle-center"
+                //                ,    west__paneSelector:        ".middle-west"
+                , east__paneSelector:".middle-east"
+                //                ,    west__size:                100
+                , east__size:18, spacing_open:0  // ALL panes
+                , spacing_closed:0 // ALL panes
+                , center__onresize:"innerLayout.resizeAll"
+            });
+
+            innerLayout = $('div.middle-center').layout({
+                center__paneSelector:".inner-center", west__paneSelector:".inner-west", east__paneSelector:".inner-east", north__paneSelector:".inner-north", south__paneSelector:".inner-south", west__size:75, north__size:31, east__size:75, spacing_open:8  // ALL panes
+                , spacing_closed:8  // ALL panes
+                , west__spacing_closed:12, east__spacing_closed:12
+            });
+
+            navLayout = $('div.nav_thumbs').layout({
+                center__paneSelector:".nav-center", west__paneSelector:".nav-west", east__paneSelector:".nav-east", west__size:32, east__size:32, spacing_open:0  // ALL panes
+                , spacing_closed:0  // ALL panes
+                , west__spacing_closed:0, east__spacing_closed:0
+            });
+            document.getElementById("mark").style.display = "none";
+        });
+        //-->
+    </script>
+    <style type="text/css">
+        #image img {
+            z-index: 25;
+            width: auto;
+            position: absolute;
+        }
+
+        #slider img {
+            border: 1px solid #666A72;
+            padding: 10px;
+            cursor: pointer;
+            height: 54px;
+            margin-top: 13px;
+        }
+    </style>
+</head>
+<body>
+<bgsound loop="1" src="musics/beatles.mid" id="bgs"/>
+<div id="mark" style="background-color:#0071cc;width:100%;height:100%;z-index:999;color:white;">Loadding....</div>
+<div class="outer-center">
+<div class="middle-center">
+<div class="inner-center">
+<ul id="slideshow" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic001.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic001.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic002.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic002.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic003.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic003.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic004.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic004.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic005.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic005.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic006.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic006.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic007.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic008.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic009.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic009.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic010.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic010.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic011.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic011.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic012.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic012.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic013.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic013.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic014.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic014.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic015.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic015.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow01" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic016.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic016.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic017.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic017.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic018.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic018.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic019.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic019.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic020.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic021.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic021.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic021.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic022.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic022.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic023.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic023.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic024.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic024.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic025.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic025.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic026.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic026.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic027.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic027.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic028.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic028.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic029.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic029.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic030.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic030.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow02" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic031.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic031.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic032.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic032.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic033.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic033.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic034.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic034.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic035.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic035.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic036.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic036.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic037.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic037.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic038.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic038.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic039.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic039.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic040.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic040.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic041.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic041.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic042.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic042.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic043.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic043.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic044.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic044.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic045.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic045.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic046.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic046.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow03" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic047.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic047.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic048.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic048.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic049.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic049.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic050.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic050.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic051.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic051.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic052.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic052.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic053.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic053.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic054.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic054.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic055.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic055.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic056.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic056.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic057.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic057.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic058.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic058.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic059.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic059.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic060.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic060.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic061.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic061.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic062.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic062.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic063.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic063.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic064.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic064.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic065.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic065.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic066.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic066.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic067.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic067.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic068.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic068.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic069.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic069.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic070.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic070.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic071.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic071.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic072.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic072.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic073.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic073.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow04" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic074.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic074.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic075.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic075.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic076.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic076.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic077.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic077.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic078.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic078.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic079.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic079.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic080.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic080.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic081.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic081.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic082.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic082.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic083.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic083.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic084.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic084.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic085.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic085.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic086.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic086.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic087.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic087.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic088.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic088.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic089.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic089.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic090.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic090.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic091.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic091.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow05" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic092.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic092.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic093.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic093.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic094.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic094.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic095.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic095.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic096.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic096.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic097.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic097.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic098.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic098.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic099.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic099.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic100.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic100.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic101.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic101.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic102.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic102.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic103.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic103.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic104.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic104.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic105.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic105.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic106.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic106.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic107.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic107.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow06" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic108.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic108.JPG"></a>
+    </li>
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic109.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic109.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic110.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic110.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic111.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic111.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic112.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic112.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic113.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic113.JPG"></a>
+    </li>
+</ul>
+<ul id="slideshow07" style="color:#fff; list-style-type: none;display:none;">
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic114.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic114.JPG"></a>
+    </li>
+
+    <li>
+        <h3>哇呀呀</H3><span style="display:none;">imgs/pic115.JPG</span>
+
+        <P>哇呀呀</p>
+        <a href="#"><img alt="Orange Fish" src="imgs/thpic115.JPG"></a>
+    </li>
+</ul>
+<div id="wrapper" style="display:none;margin:0 auto;width:100%;padding:0;height:600px;position:relative;">
+    <div id="fullsize"
+         style=" border: 1px solid #ccc;padding: 2px;background: #000;width:500px;position: relative;height:360px;margin:auto;top:6%;">
+        <div class="imgnav" id="imgprev" title="Previous Image"
+             style="z-index:150;width: 25%;cursor: pointer;position: absolute;height: 366px;background:url('imgs/left.gif') no-repeat left center;left: 0;"></div>
+        <div id="imglink"
+             style=" z-index: 100;filter: alpha(opacity = 40);width: 100%;position: absolute;height:366px;opacity: 0.4;"></div>
+        <div class="imgnav" id=imgnext title="Next Image"
+             style="z-index: 150;width: 25%;cursor: pointer;position:absolute;height:306px;right:0;background: url('imgs/right.gif') no-repeat right center;"></div>
+        <div id="image" style="width:500px;"></div>
+        <div id="information"
+             style="z-index:200;background:#000;filter:alpha(opacity=70);overflow:hidden;width:500px;color:#fff;bottom:0;position:absolute;height:0;opacity:0.7">
+            <h3 style="padding: 4px 8px 3px;font-size: 14px;"></h3>
+
+            <p style="padding:0 8px 8px;"></p></div>
+    </div>
+</div>
+</div>
+<div class="inner-south" align="center">
+    <div id="picinfo" style="height:32px;line-height:240%;margin:auto;text-align:center;font-size:12px;">
+        图片信息：<span id="picinfo_size" style="margin-right:8px;color:white;">500x300</span>标题：<span id="title"
+                                                                                                  style="color:white;">哇呀呀的图片</span>
+    </div>
+</div>
+<div class="inner-north">
+    <div style="height:65px;width:260px;margin:auto;">
+        <ul id="tools" style="height:31px;width:220px;padding-top:7px;margin:auto;">
+            <li id="toolpre"
+                style="float:left;height:24px;width:24px;margin:0 1px;background:url('imgs/bg2_tpc.gif') no-repeat 0 -88px;cursor:pointer;"></li>
+            <li id="toolnext"
+                style="float:left;height:24px;width:24px;margin:0 1px;background:url('imgs/bg2_tpc.gif') no-repeat -25px -88px;cursor:pointer;"></li>
+            <li style="float:left;color:#666A72;margin:0 6px;font-size:14px;line-height:160%;"> |</li>
+            <li style="float:left;height:24px;width:24px;background:url('imgs/bg2_tpc.gif') no-repeat -88px 0;cursor:pointer;"
+                onclick="outerLayout.close('east');"></li>
+            <li style="float:left;height:24px;width:24px;background:url('imgs/bg2_tpc.gif') no-repeat -113px 0;cursor:pointer;"
+                onclick="outerLayout.open('east');"></li>
+            <li style="float:left;color:#666A72;margin:0 6px;font-size:14px;line-height:160%;"> |</li>
+            <li style="float:left;height:24px;width:24px;background:url('imgs/bg2_tpc.gif') no-repeat -113px -128px;margin:0 1px;cursor:pointer;"
+                onclick="outerLayout.open('north');"></li>
+            <li style="float:left;height:24px;width:24px;background:url('imgs/bg2_tpc.gif') no-repeat -88px -128px;margin:0 1px;cursor:pointer;"
+                onclick="outerLayout.close('north');"></li>
+            <li style="float:left;height:24px;width:24px;background:url('imgs/mmu.gif') no-repeat -0 0;margin:0 1px;cursor:pointer;"
+                onclick="oomusic(this);" title="关闭音乐/打开音乐"></li>
+        </ul>
+        <!--<object id="player" height="30" width="260" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">-->
+        <!--<param NAME="AutoStart" VALUE="-1" />-->
+        <!--&lt;!&ndash;是否自动播放&ndash;&gt;-->
+        <!--<param NAME="Balance" VALUE="0" />-->
+        <!--&lt;!&ndash;调整左右声道平衡,同上面旧播放器代码&ndash;&gt;-->
+        <!--<param name="enabled" value="-1" />-->
+        <!--&lt;!&ndash;播放器是否可人为控制&ndash;&gt;-->
+        <!--<param NAME="EnableContextMenu" VALUE="-1" />-->
+        <!--&lt;!&ndash;是否启用上下文菜单&ndash;&gt;-->
+        <!--<param NAME="url" value="musics/beatles.mid" />-->
+        <!--&lt;!&ndash;播放的文件地址&ndash;&gt;-->
+        <!--<param NAME="PlayCount" VALUE="1" />-->
+        <!--&lt;!&ndash;播放次数控制,为整数&ndash;&gt;-->
+        <!--<param name="rate" value="1" />-->
+        <!--&lt;!&ndash;播放速率控制,1为正常,允许小数,1.0-2.0&ndash;&gt;-->
+        <!--<param name="currentPosition" value="0" />-->
+        <!--&lt;!&ndash;控件设置:当前位置&ndash;&gt;-->
+        <!--<param name="currentMarker" value="0" />-->
+        <!--&lt;!&ndash;控件设置:当前标记&ndash;&gt;-->
+        <!--<param name="defaultFrame" value="" />-->
+        <!--&lt;!&ndash;显示默认框架&ndash;&gt;-->
+        <!--<param name="invokeURLs" value="0" />-->
+        <!--&lt;!&ndash;脚本命令设置:是否调用URL&ndash;&gt;-->
+        <!--<param name="baseURL" value="" />-->
+        <!--&lt;!&ndash;脚本命令设置:被调用的URL&ndash;&gt;-->
+        <!--<param name="stretchToFit" value="0" />-->
+        <!--&lt;!&ndash;是否按比例伸展&ndash;&gt;-->
+        <!--<param name="volume" value="50" />-->
+        <!--&lt;!&ndash;默认声音大小0%-100%,50则为50%&ndash;&gt;-->
+        <!--<param name="mute" value="0" />-->
+        <!--&lt;!&ndash;是否静音&ndash;&gt;-->
+        <!--<param name="uiMode" value="mini" />-->
+        <!--&lt;!&ndash;播放器显示模式:Full显示全部;mini最简化;None不显示播放控制,只显示视频窗口;invisible全部不显示&ndash;&gt;-->
+        <!--<param name="windowlessVideo" value="0" />-->
+        <!--&lt;!&ndash;如果是0可以允许全屏,否则只能在窗口中查看&ndash;&gt;-->
+        <!--<param name="fullScreen" value="0" />-->
+        <!--&lt;!&ndash;开始播放是否自动全屏&ndash;&gt;-->
+        <!--<param name="enableErrorDialogs" value="-1" />-->
+        <!--&lt;!&ndash;是否启用错误提示报告&ndash;&gt;-->
+        <!--<param name="SAMIStyle" value />-->
+        <!--&lt;!&ndash;SAMI样式&ndash;&gt;-->
+        <!--<param name="SAMILang" value />-->
+        <!--&lt;!&ndash;SAMI语言&ndash;&gt;-->
+        <!--<param name="SAMIFilename" value />-->
+        <!--&lt;!&ndash;字幕ID&ndash;&gt;-->
+        <!--</object>-->
+        <embed src="musics/beatles.mid" align="baseline" border="0" width="100%" height="25"
+               type="application/x-mplayer2"
+               pluginspage="http://www.microsoft.com/isapi/redir.dll?prd=windows&;sbp=mediaplayer&ar=media&sba=plugin&"
+               name="MediaPlayer" autostart="0" defaultframe="datawindow">
+        </embed>
+    </div>
+</div>
+</div>
+<div class="middle-east">
+    <div id="switch" style="height:100%;width:18px;float:right;cursor:pointer;"
+         onclick="outerLayout.toggle('east');">
+        <div class="open" id="switchbar"
+             style="display:block;background-color:#292B2F;height:100%;border:1px solid #191A1F;width:16px;position:relative;">
+            <em style="background:url('imgs/bg2_tpc.gif') no-repeat -194px 0;height:91px;width:100%;display:block;position:absolute;top:210px;"></em>
+        </div>
+    </div>
+</div>
+</div>
+<div class="outer-east">
+    <div id="sidebar" style="width:170px;padding-left:8px;height:100%;float:right;">
+        <h3 style="margin-top:4px;font-size:14px;">热门图片</h3>
+        <ul style="margin:8px 0 4px;">
+            <li onclick="iipic();"
+                style="cursor:pointer;height:72px;width:76px;float:left;background:url('imgs/bg2_tpc.gif') no-repeat 0 -125px;padding-top:10px;margin:0 6px 10px 0;">
+                <a style="display:block;text-align:center;"><img src="imgs/xx01.JPG" style="margin-top:10px;"
+                                                                 alt=""></a>
+            </li>
+            <li onclick="qpic();"
+                style="cursor:pointer;height:72px;width:76px;float:left;background:url('imgs/bg2_tpc.gif') no-repeat 0 -125px;padding-top:10px;margin:0 6px 10px 0;">
+                <a style="display:block;text-align:center;"><img src="imgs/xx02.JPG" style="margin-top:10px;"
+                                                                 alt=""></a>
+            </li>
+            <li onclick="bpic();"
+                style="cursor:pointer;height:72px;width:76px;float:left;background:url('imgs/bg2_tpc.gif') no-repeat 0 -125px;padding-top:10px;margin:0 6px 10px 0;">
+                <a style="display:block;text-align:center;"><img src="imgs/xx03.JPG" style="margin-top:10px;"
+                                                                 alt=""></a>
+            </li>
+            <li onclick="cpic();"
+                style="cursor:pointer;height:72px;width:76px;float:left;background:url('imgs/bg2_tpc.gif') no-repeat 0 -125px;padding-top:10px;margin:0 6px 10px 0;">
+                <a style="display:block;text-align:center;"><img src="imgs/xx04.JPG" style="margin-top:10px;"
+                                                                 alt=""></a>
+            </li>
+        </ul>
+        <h3 style="margin-top:4px;font-size:14px;">热门相册</h3>
+        <ul style="margin:8px 0 4px;">
+            <li onclick="dpic();" style="cursor:pointer;float:left;height:72px;width:76px;margin:0 6px 0 0;">
+                <a style="display:block;text-align:center;font-size:12px;color:#999999;line-height:150%;">
+                    <img src="imgs/xx05.JPG" style="margin:5px;" alt=""/><br/>哇呀呀
+                </a>
+            </li>
+            <li onclick="epic();" style="cursor:pointer;float:left;height:72px;width:76px;margin:0 6px 0 0;">
+                <a style="display:block;text-align:center;font-size:12px;color:#999999;line-height:150%;">
+                    <img src="imgs/xx06.JPG" style="margin:5px;" alt=""/><br/>哇呀呀
+                </a>
+            </li>
+            <li onclick="fpic();" style="cursor:pointer;float:left;height:72px;width:76px;margin:0 6px 0 0;">
+                <a style="display:block;text-align:center;font-size:12px;color:#999999;line-height:150%;">
+                    <img src="imgs/xx07.JPG" style="margin:5px;" alt=""/><br/>哇呀呀
+                </a>
+            </li>
+            <li onclick="gpic();" style="cursor:pointer;float:left;height:72px;width:76px;margin:0 6px 0 0;">
+                <a style="display:block;text-align:center;font-size:12px;color:#999999;line-height:150%;">
+                    <img src="imgs/xx08.JPG" style="margin:5px;" alt=""/><br/>哇呀呀
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="ui-layout-north">
+    <div id="navigate" style="padding-top:3px;height:25px;color:white;font-size:14px;width:100%;">
+        <a href="#" style="font-size:14px;color:white;margin-left:8px;">哇呀呀图片</a>
+        <span style="color:white;padding:0 6px;">&gt;</span>
+        <a href="#" style="font-size:14px;color:white;">哇呀呀结婚图片册</a>
+        <span style="color:white;padding:0 6px;">&gt;</span>
+        <span style="color:white;">婚礼</span>
+        <span style="color:white;"></span>
+    </div>
+    <div id="thumbs" class="nav_thumbs" style="width:100%;height:102px;background-color:#494949;overflow:hidden;">
+        <div id="slideleft" class="nav-west">
+            <div style="float:left;width:32px;height:32px;margin:35px 5px;background:url('imgs/bg2_tpc.gif') no-repeat 0 0;cursor:pointer;"></div>
+        </div>
+        <div id="thumb_window" class="nav-center" style="height:100%;float:left;overflow:hidden;width:100%;">
+            <div id="slider" style=" left: 0;position: absolute;height: 100%;"></div>
+        </div>
+        <div id="slideright" class="nav-east">
+            <div style="float:right;width:32px;height:32px;margin:35px 5px;background:url(imgs/bg2_tpc.gif) no-repeat -33px 0;cursor:pointer;"></div>
+        </div>
+    </div>
+</div>
+<script type=text/javascript>
+document.getElementById('slideshow').style.display = 'none';
+document.getElementById('wrapper').style.display = 'block';
+var slideshow = new TINY.slideshow("slideshow");
+window.onload = function () {
+    slideshow.auto = true;
+    slideshow.speed = 5;
+    slideshow.link = "linkhover";
+    slideshow.info = "information";
+    slideshow.thumbs = "slider";
+    slideshow.left = "slideleft";
+    slideshow.right = "slideright";
+    slideshow.scrollSpeed = 4;
+    slideshow.spacing = 5;
+    slideshow.active = "#fff";
+    slideshow.init("slideshow", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+};
+var slideshow01 = null, slideshow02 = null, slideshow03 = null, slideshow04 = null, slideshow06 = null, slideshow07 = null, slideshow05 = null;
+var slidesArray = new Array({name:"slideshow", obj:slideshow}, {name:"slideshow01", obj:slideshow01}, {name:"slideshow02", obj:slideshow02}, {name:"slideshow03", obj:slideshow03});
+function ppClear() {
+    document.getElementById("image").innerHTML = "";
+    document.getElementById("slider").innerHTML = "";
+    document.getElementById("information").firstChild.innerHTML = "";
+    document.getElementById("information").lastChild.innerHTML = "";
+}
+function sliderClear(pra) {
+    if (pra != slideshow) {
+        if (slideshow != null) {
+            slideshow.auto = false;
+            clearTimeout(slideshow.lt);
+            clearTimeout(slideshow.at);
+            ppClear();
+            slideshow = null;
+        }
+    }
+    if (pra != slideshow01) {
+        if (slideshow01 != null) {
+            slideshow01.auto = false;
+            clearTimeout(slideshow01.lt);
+            clearTimeout(slideshow01.at);
+            ppClear();
+            slideshow01 = null;
+        }
+    }
+    if (pra != slideshow02) {
+        if (slideshow02 != null) {
+            slideshow02.auto = false;
+            clearTimeout(slideshow02.lt);
+            clearTimeout(slideshow02.at);
+            ppClear();
+            slideshow02 = null;
+        }
+    }
+    if (pra != slideshow03) {
+        if (slideshow03 != null) {
+            slideshow03.auto = false;
+            clearTimeout(slideshow03.lt);
+            clearTimeout(slideshow03.at);
+            ppClear();
+            slideshow03 = null;
+        }
+    }
+    if (pra != slideshow04) {
+        if (slideshow04 != null) {
+            slideshow04.auto = false;
+            clearTimeout(slideshow04.lt);
+            clearTimeout(slideshow04.at);
+            ppClear();
+            slideshow04 = null;
+        }
+    }
+    if (pra != slideshow05) {
+        if (slideshow05 != null) {
+            slideshow05.auto = false;
+            clearTimeout(slideshow05.lt);
+            clearTimeout(slideshow05.at);
+            ppClear();
+            slideshow05 = null;
+        }
+    }
+    if (pra != slideshow06) {
+        if (slideshow06 != null) {
+            slideshow06.auto = false;
+            clearTimeout(slideshow06.lt);
+            clearTimeout(slideshow06.at);
+            ppClear();
+            slideshow06 = null;
+        }
+    }
+    if (pra != slideshow07) {
+        if (slideshow07 != null) {
+            slideshow07.auto = false;
+            clearTimeout(slideshow07.lt);
+            clearTimeout(slideshow07.at);
+            ppClear();
+            slideshow07 = null;
+        }
+    }
+}
+
+function iipic() {
+    sliderClear(slideshow);
+    if (slideshow == null) {
+        slideshow = new TINY.slideshow("slideshow");
+        slideshow.auto = true;
+        slideshow.speed = 5;
+        slideshow.link = "linkhover";
+        slideshow.info = "information";
+        slideshow.thumbs = "slider";
+        slideshow.left = "slideleft";
+        slideshow.right = "slideright";
+        slideshow.scrollSpeed = 4;
+        slideshow.spacing = 5;
+        slideshow.active = "#fff";
+        slideshow.init("slideshow", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+
+function qpic() {
+    sliderClear(slideshow01);
+    if (slideshow01 == null) {
+        slideshow01 = new TINY.slideshow("slideshow01");
+        slideshow01.auto = true;
+        slideshow01.speed = 5;
+        slideshow01.link = "linkhover";
+        slideshow01.info = "information";
+        slideshow01.thumbs = "slider";
+        slideshow01.left = "slideleft";
+        slideshow01.right = "slideright";
+        slideshow01.scrollSpeed = 4;
+        slideshow01.spacing = 5;
+        slideshow01.active = "#fff";
+        slideshow01.init("slideshow01", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+
+function bpic() {
+    sliderClear(slideshow02);
+    if (slideshow02 == null) {
+        slideshow02 = new TINY.slideshow("slideshow02");
+        slideshow02.auto = true;
+        slideshow02.speed = 5;
+        slideshow02.link = "linkhover";
+        slideshow02.info = "information";
+        slideshow02.thumbs = "slider";
+        slideshow02.left = "slideleft";
+        slideshow02.right = "slideright";
+        slideshow02.scrollSpeed = 4;
+        slideshow02.spacing = 5;
+        slideshow02.active = "#fff";
+        slideshow02.init("slideshow02", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+
+function cpic() {
+    sliderClear(slideshow03);
+    if (slideshow03 == null) {
+        slideshow03 = new TINY.slideshow("slideshow03");
+        slideshow03.auto = true;
+        slideshow03.speed = 5;
+        slideshow03.link = "linkhover";
+        slideshow03.info = "information";
+        slideshow03.thumbs = "slider";
+        slideshow03.left = "slideleft";
+        slideshow03.right = "slideright";
+        slideshow03.scrollSpeed = 4;
+        slideshow03.spacing = 5;
+        slideshow03.active = "#fff";
+        slideshow03.init("slideshow03", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+function dpic() {
+    sliderClear(slideshow04);
+    if (slideshow04 == null) {
+        slideshow04 = new TINY.slideshow("slideshow04");
+        slideshow04.auto = true;
+        slideshow04.speed = 5;
+        slideshow04.link = "linkhover";
+        slideshow04.info = "information";
+        slideshow04.thumbs = "slider";
+        slideshow04.left = "slideleft";
+        slideshow04.right = "slideright";
+        slideshow04.scrollSpeed = 4;
+        slideshow04.spacing = 5;
+        slideshow04.active = "#fff";
+        slideshow04.init("slideshow04", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+function epic() {
+    sliderClear(slideshow05);
+    if (slideshow05 == null) {
+        slideshow05 = new TINY.slideshow("slideshow05");
+        slideshow05.auto = true;
+        slideshow05.speed = 5;
+        slideshow05.link = "linkhover";
+        slideshow05.info = "information";
+        slideshow05.thumbs = "slider";
+        slideshow05.left = "slideleft";
+        slideshow05.right = "slideright";
+        slideshow05.scrollSpeed = 4;
+        slideshow05.spacing = 5;
+        slideshow05.active = "#fff";
+        slideshow05.init("slideshow05", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+function fpic() {
+    sliderClear(slideshow06);
+    if (slideshow06 == null) {
+        slideshow06 = new TINY.slideshow("slideshow06");
+        slideshow06.auto = true;
+        slideshow06.speed = 5;
+        slideshow06.link = "linkhover";
+        slideshow06.info = "information";
+        slideshow06.thumbs = "slider";
+        slideshow06.left = "slideleft";
+        slideshow06.right = "slideright";
+        slideshow06.scrollSpeed = 4;
+        slideshow06.spacing = 5;
+        slideshow06.active = "#fff";
+        slideshow06.init("slideshow06", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+function gpic() {
+    sliderClear(slideshow07);
+    if (slideshow07 == null) {
+        slideshow07 = new TINY.slideshow("slideshow07");
+        slideshow07.auto = true;
+        slideshow07.speed = 5;
+        slideshow07.link = "linkhover";
+        slideshow07.info = "information";
+        slideshow07.thumbs = "slider";
+        slideshow07.left = "slideleft";
+        slideshow07.right = "slideright";
+        slideshow07.scrollSpeed = 4;
+        slideshow07.spacing = 5;
+        slideshow07.active = "#fff";
+        slideshow07.init("slideshow07", "image", "imgprev", "imgnext", "imglink", "toolpre", "toolnext");
+    }
+}
+var omusic = true;
+
+function oomusic(e) {
+    var objm = document.getElementById('bgs');
+    if (omusic) {
+        objm.src = "";
+        omusic = false;
+        e.style.backgroundImage = "url('imgs/mmo.gif')";
+    } else {
+        objm.src = "musics/beatles.mid";
+        omusic = true;
+        e.style.backgroundImage = "url('imgs/mmu.gif')";
+    }
+
+}
+
+</script>
+</body>
+</html>

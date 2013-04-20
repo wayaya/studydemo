@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>管理 查询</title>
+<base target="main">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" bgcolor="#FFCC66">
+
+<table border="0" width="102%" id="table1" height="100%">
+	<tr>
+		<td colspan="3" width="100" height="144" align="center">&nbsp;
+		<font size="4"><a href="main.html">[ 管理 ]</a></font><br>
+&nbsp; <font size="4"><a target="main" href="query.html">[ 查询 ]</a></font><br>
+		<font size="4">&nbsp; <a href="aaa.html">[ 显示 ]</a></font><br>
+&nbsp; <a href="vrml%20浏览器.exe">[ 插 件 ]</a><p>　</td>
+	</tr>
+	<tr>
+		<td>　</td>
+		<td>　</td>
+		<td>　</td>
+	</tr>
+	<tr>
+		<td>　</td>
+		<td>　</td>
+		<td>　</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

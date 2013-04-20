@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>经纪人博客</title>
+<meta http-equiv="content-Type" content="text/html;charset=gb2312">
+<style type="text/css">
+/*layout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #6998ce;
+}
+
+body {
+    font: 12px / 1.4em "宋体", Verdana, Geneva, Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+.clear {
+    clear: both;
+}
+
+#doc {
+    width: 980px;
+    background-color: white;
+}
+
+/*头部工具栏*/
+#doc #topbar {
+    height: 28px;
+    padding-top: 3px;
+    padding-left: 5px;
+    text-align: right;
+    border: 1px solid #d2d2d2;
+    background-color: #f7f7f7;
+}
+
+#doc #topbar ul {
+    list-style: none;
+}
+
+#doc #topbar li {
+    list-style: none;
+    float: left;
+    padding: 5px;
+}
+
+#doc #head {
+    height: 65px;
+    margin-top: 3px;
+    background-color: white;
+    text-align: left;
+}
+
+/*导航栏*/
+#doc #nav {
+    width: 980px;
+    height: 30px;
+    background: url("imgs/201012652352310.gif") repeat-x left top;
+}
+
+#doc #nav .navBox {
+    background: url(imgs/201012652352710.gif) no-repeat left top;
+    padding-left: 1px;
+}
+
+#doc #nav a {
+    display: block;
+    width: 99px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    background: url(imgs/201012652352839.gif) no-repeat left top;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+#doc #nav a:hover, #nav .cur {
+    display: block;
+    width: 99px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    background: url(imgs/201012652352118.gif) no-repeat left top;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*搜索栏*/
+#doc #search {
+    background-color: white;
+    border: 1px solid #ccdff2;
+    padding: 8px 25px;
+    margin: 3px 1px;
+}
+
+#doc #search #search_left select {
+    padding: 3px;
+    font-size: 12px;
+    width: 150px;
+}
+
+#doc #search #search_left .intxt {
+    padding: 3px;
+    margin-left: 5px;
+}
+
+#doc #search .spec {
+    border-left: 1px solid #c6c6c6;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+#doc #search #search_hotKey {
+    color: #404040;
+    font-size: 12px;
+    line-height: 24px;;
+    margin-top: 3px;
+    padding-left: 10px;
+}
+
+#doc #search #search_hotKey div {
+    float: left;
+    padding: 0 4px;
+}
+
+#doc #search #search_hotKey div a {
+    text-decoration: none;
+    color: #0053df;
+    white-space: nowrap;
+}
+
+#doc #search #search_hotKey div a:hover {
+    text-decoration: underline;
+    color: #FF3300;
+}
+
+.xun_panel .xun_header {
+    clear: both;
+    overflow: hidden;
+    height: 27px;
+    line-height: 27px;
+    background: url('imgs/sprite.png') no-repeat scroll 0 -448px transparent;
+}
+
+.xun_panel .xun_header .xun_header_right {
+    width: 20px;
+    float: right;
+    height: 27px;
+    line-height: 27px;
+    font-size: 13px;
+    color: #193B5F;
+    background: url('imgs/sprite.png') no-repeat scroll -940px -448px transparent;
+}
+
+.xun_panel .xun_header .title {
+    float: left;
+    padding-left: 10px;
+    padding-top: 2px;
+    color: #193B5F;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.xun_panel .xun_body {
+    clear: both;;
+    border: 1px solid #CCDFF2;
+    border-top: none;
+}
+
+.xun_panel .xun_body .dataul {
+    padding: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#doc #content {
+    padding: 0 2px;
+}
+
+#doc #content #layout #left {
+    float: left;
+    width: 210px;
+}
+
+#doc #content #layout #right {
+    float: left;
+    width: 749px;
+    margin-left: 5px;
+}
+
+.nav_list li {
+    list-style: none;
+    padding-bottom:0;
+    margin-bottom:0;
+    height:24px;
+}
+
+.nav_list li a {
+    color: #444444;
+    border-bottom: 1px solid #eeeeee;
+    display: block;
+    padding: 3px 3px 3px 10px;
+    text-decoration: none;
+}
+
+.nav_list li a:hover {
+    background-color: #dddddd;
+}
+
+.profile p {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    width: 224px;
+}
+
+</style>
+</head>
+<body>
+<div align="center" style="background-color:#6998ce;">
+<div id="doc">
+<div id="topbar">
+    <ul>
+        <li>您好，欢迎来到有房网！</li>
+        <li><a href="#">请登陆</a></li>
+        <li>/</li>
+        <li><a href="#">免费注册</a></li>
+    </ul>
+</div>
+<div id="head">
+    <div style="float:left;"><img src="imgs/logog.gif" alt=""/></div>
+    <div style="float:left;width:812px;height:63px;background:url('imgs/logoblank.gif') no-repeat"></div>
+    <div class="clear"></div>
+</div>
+<div id="nav">
+    <div class="navBox f_r" style="margin-left:240px;">
+        <a href="index.html" class="cur">首页</a>
+        <a href="#">租房快讯</a>
+        <a href="#">租房搜索</a>
+        <a href="#">房源管理</a>
+        <a href="agent.html">用户信息</a>
+        <a href="#">服务中心</a>
+        <a href="#">关于我们</a>
+    </div>
+</div>
+<div id="search">
+    <table>
+        <tr>
+            <td id="search_left"><select>
+                <option selected="selected">视频教程</option>
+                <option>范例演示</option>
+                <option>技术文章</option>
+                <option>范例源码</option>
+            </select>
+                <input class="intxt" type="text" value="在线范例"/>
+                <input type="button" value="搜索"/></td>
+            <td>
+                <div class="spec">&#160;</div>
+            </td>
+            <td>
+                <input type="button" value="高级搜索"/>
+            </td>
+            <td id="search_hotKey" height="32">
+                <div>热搜:</div>
+                <div>
+                    <a href="#" class="link_search_hotKey">地图</a>
+                </div>
+                <div><a href="#" class="link_search_hotKey">空间</a></div>
+                <div><a href="#" class="link_search_hotKey">视频</a></div>
+                <div><a href="#" class="link_search_hotKey">叠加分析</a>
+                </div>
+                <div><a href="#" class="link_search_hotKey">空间分析</a>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="content">
+    <div class="xun_panel">
+        <div class="xun_header">
+            <div class="xun_header_right"></div>
+            <div class="title">用户信息</div>
+        </div>
+        <div class="xun_body">
+            <div class="dataul">
+                <ul class="left_datalist">
+                    <div id="layout">
+                        <div id="left">
+                            <div>
+                                <div class="xun_panel">
+                                    <div class="xun_header">
+                                        <div class="xun_header_right"></div>
+                                        <div class="title">用户照片</div>
+                                    </div>
+                                    <div class="xun_body">
+                                        <div class="dataul">
+                                            <div style="width:185px;border:1px solid #f3f3f3;padding:4px;">
+                                                <img src="imgs/70335.jpg" width="185" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top:5px;">
+                                <div class="xun_panel">
+                                    <div class="xun_header">
+                                        <div class="xun_header_right"></div>
+                                        <div class="title">信息编辑</div>
+                                    </div>
+                                    <div class="xun_body">
+                                        <div class="dataul" style="height: 130px !important;height:130px;">
+                                            <ul class="nav_list">
+                                                <li><a href="#">修改信息</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                                <li><a href="#">修改门店</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top:5px;">
+                                <div class="xun_panel">
+                                    <div class="xun_header">
+                                        <div class="xun_header_right"></div>
+                                        <div class="title">快捷菜单</div>
+                                    </div>
+                                    <div class="xun_body">
+                                        <div class="dataul" style="height: 130px !important;height:130px;">
+                                            <ul class="nav_list">
+                                                <li><a href="#">发布新出租</a></li>
+                                                <li><a href="#">发布新寻租</a></li>
+                                                <li><a href="#">修改个人信息</a></li>
+                                                <li><a href="#">修改密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right">
+                            <div class="xun_panel">
+                                <div class="xun_header">
+                                    <div class="xun_header_right"></div>
+                                    <div class="title">个人信息</div>
+                                </div>
+                                <div class="xun_body">
+                                    <div class="dataul" style="padding:5px;height:150px;">
+                                        <div class="profile" style="margin-top:5px;">
+                                            <p>姓名：江文化</p>
+
+                                            <p>性别：男</p>
+
+                                            <p>手机：13401184677</p>
+
+                                            <p>座机：07988589948</p>
+
+                                            <p>QQ：303715446</p>
+
+                                            <p>MSN：12334@hotmail.com</p>
+
+                                            <p>电子邮件：jiangwenhua166@126.com</p>
+
+                                            <p>工龄：3</p>
+
+                                            <p>职务：公务员</p>
+
+                                            <p>服务范围：海淀区西三旗</p>
+
+                                            <p>毕业学院：中国地质大学</p>
+
+                                            <p>籍贯：江西</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xun_panel" style="margin-top:5px;">
+                                <div class="xun_header">
+                                    <div class="xun_header_right"></div>
+                                    <div class="title">个人简介</div>
+                                </div>
+                                <div class="xun_body">
+                                    <div class="dataul" style="height: 130px !important;height:130px;">
+                                        <p style="line-height:23px;text-indent:24px;">
+                                            江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你江西人民欢迎你</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xun_panel" style="margin-top:5px;">
+                                <div class="xun_header">
+                                    <div class="xun_header_right"></div>
+                                    <div class="title">业务信息</div>
+                                </div>
+                                <div class="xun_body">
+                                    <div class="dataul">
+                                        <div class="profile" style="padding:5px;height:170px;">
+                                            <p>门店名称：我爱我家</p>
+
+                                            <p>门店地址：西三旗</p>
+
+                                            <p>联系电话：1340118999</p>
+
+                                            <p>营业时间：07点30分</p>
+
+                                            <p>开店时间：2010-05-01</p>
+
+                                            <p>门店店长：张三丰</p>
+
+                                            <p>公司名称：sdfa</p>
+
+                                            <p>门店经纪人数：8个</p>
+
+                                            <p>资质证号：2345678</p>
+
+                                            <p>营业执照号：65465798</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="footer" style="border-top:1px solid #c6c6c6;margin:5px 5px;padding:5px;" align="center">
+    <p><a class="link_footer" target="_self" href="#">RSS</a>&#160;&#160;&#160;|&#160;&#160;&#160;
+        <a class="link_footer" target="_self" href="#">人才诚聘</a>&#160;&#160;&#160;|&#160;&#160;&#160;
+        <a class="link_footer" target="_self" href="#">法律公告</a>&#160;&#160;&#160;|&#160;&#160;&#160;
+        <a class="link_footer" target="_self" href="#">友情链接</a>
+    </p>
+
+    <p>
+        版权所有? 1997-2010，北京超图软件股份有限公司&#160;&#160;京ICP证020360号&#160;&#160; 京ICP备05002978号
+    </p>
+</div>
+</div>
+</div>
+</body>
+</html>
